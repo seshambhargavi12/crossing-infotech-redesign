@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossing info Redesign</title>
+    <style>
+        * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 30px;
+}
+
+.btn-primary, .btn-secondary {
+    background-color: yellow;
+    color: #000;
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.box {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    background-color: blueviolet;
+    border: 5px solid greenyellow;
+    border-radius: 25px;
+}
+
+.front {
+    padding: 10px 0px;
+    font-size: x-large;
+    line-height: 25px;
+    color: aliceblue;
+}
+
+.btn-one {
+    padding: 5px 30px;
+    border-radius: 25px;
+    background-color: rgb(237, 125, 13);
+    border: 2px solid white;
+    color: aliceblue;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h6 {
+    font-size: 70px;
+}
+
+.short {
+    font-size: 25px;
+}
+
+.two {
+    padding: 5px 30px;
+    border-radius: 25px;
+}
+
+.proof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.nums {
+    display: flex;
+    gap: 20px;
+}
+
+.hproof {
+    font-size: 60px;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 40px;
+    font-size: 45px;
+}
+
+.below {
+    font-size: 20px;
+}
+
+.present {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.pre-one {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    align-content: center;
+}
+
+.pic {
+    width: 290px;
+    height: 140px;
+    padding: 10px 45px;
+}
+
+.pre-two {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.high {
+    font-size: 40px;
+}
+
+.pre-last {
+    display: flex;
+    flex-direction: column;
+}
+
+.last {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.l {
+    font-size: 30px;
+}
+
+.pl {
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+footer {
+    background-color: blueviolet;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.finish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.fl {
+    font-size: 18px;
+}
+
+.btn-four {
+    background-color: yellow;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 50px;
+}
+
+.ad {
+    color: yellow;
+    font-size: 18px;
+}
+
+.post-finish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="cp-2.jpg" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <h3>Home</h3>
+            <h3>About Us</h3>
+            <h3>Services</h3>
+            <h3>Industry</h3>
+        </div>
+        <div class="btn">
+            <button class="btn-primary">Hire Talent</button>
+            <button class="btn-secondary">Login</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="box">
+            <h5 class="front">Start Hiring Top Talent</h5>
+            <button class="btn-one">Here</button>
+        </div>
+
+        <div class="video-container">
+            <video autoplay muted loop playsinline id="bg-video">
+                <source src="office.mp4" type="video/mp4">
+            </video>
+            <div class="video-text">
+                <h6>Building High-Performance Teams Across India</h6>
+                <p class="short">Crossing Infotech delivers specialized IT and Healthcare Staffing solutions, accelerating your hiring process and building future-ready teams nationwide.</p>
+                <button class="two">Hire Talent</button>
+                <button class="two">Contact Us</button>
+            </div>
+        </div>
+
+        <div class="proof">
+            <p class="pproof">By the Number</p>
+            <h4 class="hproof">Our National Wide IMPACT</h4>
+            <div class="nums">
+                <div>
+                    <h3 class="mid">500+</h3>
+                    <p class="below">Successful Placements</p>
+                </div>
+                <div>
+                    <h3 class="mid">200+</h3>
+                    <p class="below">Enterprise Clients</p>
+                </div>
+                <div>
+                    <h3 class="mid">50+</h3>
+                    <p class="below">Recruitment Specialists</p>
+                </div>
+                <div>
+                    <h3 class="mid">20+</h3>
+                    <p class="below">Cities Served</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="present">
+            <div class="pre-two">
+                <p>Your Strategic Partner</p>
+                <h4 class="high">Specialized Staffing, Streamlined Process</h4>
+                <p>India's trusted partner for IT and Healthcare Staffing, ensuring a faster, more efficient recruitment journey across PAN India.</p>
+                <p>Builds high-performance teams with confidence.</p>
+            </div>
+            <div class="pre-one">
+                <img src="p1.jpg" class="pic" alt="Partner 1">
+                <img src="p2.jpg" class="pic" alt="Partner 2">
+                <img src="p3.jpg" class="pic" alt="Partner 3">
+                <img src="p4.jpg" class="pic" alt="Partner 4">
+            </div>
+        </div>
+
+        <div class="pre-last">
+            <h6 class="pl">8 Step Precision Requirement</h6>
+            <div class="last">
+                <div class="post">
+                    <h4>01</h4>
+                    <h5 class="l">Requirement Analysis</h5>
+                    <p>Find perfect Fit</p>
+                </div>
+                <div class="post">
+                    <h4>02</h4>
+                    <h5 class="l">Technical Sourcing</h5>
+                    <p>Filters Top Talent</p>
+                </div>
+                <div class="post">
+                    <h4>03</h4>
+                    <h5 class="l">Rigorous Screening</h5>
+                    <p>Gold Standard talent is selected</p>
+                </div>
+                <div class="post">
+                    <h4>04</h4>
+                    <h5 class="l">Technical Evaluation</h5>
+                    <p>In-depth assessments for IT roles; clinical checks for healthcare.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="finish">
+            <h6 class="hfl">Ready to Build Your Dream Team?</h6>
+            <p class="fl">Don't Roam</p>
+            <button class="btn-four">Schedule consultation Now</button>
+        </div>
+        <div class="post-finish">
+            <p class="ad">Head Office</p>
+            <h3>15E, Service Lane, Janakpuri, New Delhi,<br>Delhi 110058</h3>
+            <h3>info@crossinginfotech.com</h3>
+            <h3>Serving enterprise clients across PAN <br>India</h3>
+        </div>
+    </footer>
+</body>
+</html>
